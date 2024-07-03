@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Login</title>
+      <link href="/static/css/stylesheet.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   </head>
+   <body>
+      <a href="{{ url_for('home') }}" class="home-link"> <i class="fas fa-home"></i> <!-- Font Awesome house icon --></a>
+
+      <h1>Admin Login</h1>
+      {% if error %}
+      <p style="color: red;">{{ error }}</p>
+      {% endif %}
+      
+      <form action="/login" method="POST">
+         <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+         </div>
+         <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+         </div>
+         <button type="submit">Login</button>
+      </form>
+   </body>
+</html>

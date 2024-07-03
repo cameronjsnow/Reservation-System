@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ticket Reservation</title>
+      <link href="/static/css/stylesheet.css" rel="stylesheet">
+   </head>
+   <body>
+
+      <h1>Hackathon Reservation</h1>
+
+      <br>
+      
+      <div class="dropdown-container">
+         <button class="dropdown-button" onclick="toggleDropdown()">Choose an option</button>
+         <div class="dropdown-list" id="myDropdown">
+            <div class="dropdown-list-item" onclick="selectOption('Admin')">Admin Login</div>
+            <div class="dropdown-list-item" onclick="selectOption('Reservation')">Reserve A Seat</div>
+         </div>
+      </div>
+
+      <script>
+         
+         function toggleDropdown() {
+           var dropdownList = document.getElementById("myDropdown");
+           dropdownList.style.display = (dropdownList.style.display === "block") ? "none" : "block";
+         }
+         
+         function selectOption(option) {
+           if (option === 'Admin') {
+             window.location.href = "/login"; // Redirect to the login page
+           } else if (option === 'Reservation') {
+             window.location.href = "/reservation"; // Redirect to reservation page
+           }
+         }
+
+      </script>
+   </body>
+</html>

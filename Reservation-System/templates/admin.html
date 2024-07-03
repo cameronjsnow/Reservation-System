@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <link href="/static/css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <a href="{{ url_for('home') }}" class="home-link"><i class="fas fa-home"></i></a>
+    <h1>Admin Dashboard</h1>
+    <h2>Total Sales: {{ total_sales }}</h2>
+    <h3>Seating Chart</h3>
+    <table>
+        {% for row in seat_matrix %}
+        <tr>
+            {% for seat in row %}
+            <td class="{{ seat }}">{{ seat }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('home') }}" class="return-home-link"><i class="fas fa-arrow-left"></i> Return to Home</a>
+</body>
+</html>

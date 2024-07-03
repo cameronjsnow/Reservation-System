@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trip-reservation-system
+    ports:
+      - "5000:5000"
+    volumes: 
+      - .:/app
+    environment:
+      FLASK_DEBUG: 1
+  

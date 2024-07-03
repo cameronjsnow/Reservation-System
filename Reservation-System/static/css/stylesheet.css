@@ -1,0 +1,207 @@
+/* Global Body Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #222429;
+  color: #b1b8ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin: 0;
+  padding: 20px; 
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); 
+
+}
+h2{
+  color: whitesmoke;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  position: relative;
+  text-align: center; 
+}
+
+.dropdown-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #333740;
+  color: #b1b8ca;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background-color: #333740;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center; 
+}
+
+.dropdown-list-item {
+  color: #b1b8ca;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+
+.dropdown-button:hover {
+  background-color: #2b2e34;
+}
+
+.dropdown-list-item:hover {
+  background-color: #2b2e34;
+}
+
+/* Login Form Styles */
+form {
+  background-color: #333740;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #b1b8ca;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #b1b8ca;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); 
+  background-color: white; 
+  color: #333; 
+  outline: none; 
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2c62f6;
+  border: none;
+  border-radius: 30px; /* Adjust border-radius to control roundness */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #2b2e34;
+}
+
+/* Error Message Styles */
+p.error-message {
+  color: red;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+}
+
+/*Home Button*/
+.home-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color:#bcc5d7;
+}
+
+
+table {
+  width: 30%; /* Adjusted the table width to be narrower overall */
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  padding: 15px 10px; /* Reduced horizontal padding */
+  border: 1px solid #ddd;
+  width: 20%; /* Explicitly set each column to take up 20% of the table width */
+}
+
+td.X { /* Style for reserved seats */
+  background-color: #8b0000; /* Red to indicate reservation */
+  color: white;
+}
+
+td.O { /* Style for available seats */
+  background-color: #008500; /* Green to indicate availability */
+  color: white;
+}
+
+
+/* Home icon link styles */
+.home-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px; /* Larger size for icon */
+  color: #ffffff; /* White color */
+  text-decoration: none; /* Remove underline */
+}
+
+.home-icon:hover {
+  color: #bcc5d7; /* Lighter color on hover */
+}
+
+/* Return to Home link styles */
+.return-home-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #2c62f6; /* Consistent blue background */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  font-weight: bold; /* Bold text */
+}
+
+.return-home-link:hover {
+  background-color: #2b2e34; /* Darker shade on hover */
+  color: #ffffff; /* Ensure text color remains white */
+}
